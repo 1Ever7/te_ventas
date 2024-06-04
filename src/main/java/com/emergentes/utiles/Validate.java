@@ -16,7 +16,7 @@ public class Validate extends ConexionDB {
         boolean resultado = false;
         try {
             
-            String sql = "select * from usuarios where email=? and password=SHA2( ? , 256)";
+            String sql = "select * from usuarios where email=? and password= SHA2( ? , 256) ";
             
             pr = con.prepareStatement(sql);
             pr.setString(1, email);

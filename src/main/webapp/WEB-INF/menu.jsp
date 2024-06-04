@@ -22,10 +22,13 @@
           <li class="nav-item">
             <a class="nav-link <%=(opcion.equals("ventas")?"active":"")%>" href="VentaController" tabindex="-1" aria-disabled="true">Ventas</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link <%= (opcion.equals("usuarios") ? "active" : "")%>"  href="UsuarioControlador">Usuarios</a>
+          </li>
         </ul>
         <form class="d-flex">
           
-          <a href="LoginControlador?action=logout" class="btn btn-outline-success" >Cerrar sesión</a>
+          <a href="logout" class="btn btn-outline-success" >Cerrar sesión</a>
         </form>
       </div>
     </div>
